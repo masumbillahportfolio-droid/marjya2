@@ -19,7 +19,7 @@
   --gold:#c9a35c;
   --gold-bright:#e8c98a;
   --rose:#d98a93;
-  --rose-deep:#a63a4a;
+  --rose-deep:#a63a4a;5
   --text:#efe3d3;
   --text-dim:#b9a68f;
 }
@@ -414,7 +414,7 @@ section{
         <circle cx="34.5" cy="7" r="2.6"/>
       </svg>
       <div class="letter-body" id="letterBody"></div>
-      <p class="signature" id="signature">— with love, <span class="sig-name" data-fill="from"></span></p>
+      <p class="signature" id="signature">— from <span class="sig-name" data-fill="from"></span></p>
       <div class="stamp" id="stamp">
         <svg viewBox="0 0 80 80" aria-hidden="true">
           <defs>
@@ -485,7 +485,7 @@ section{
           <span class="orn-line"></span>
           <svg class="hi" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27.6C9.2 21.9 3.4 16.8 3.4 11c0-4.4 3.4-7.2 7-7.2 2.5 0 4.6 1.4 5.6 3.6 1-2.2 3.1-3.6 5.6-3.6 3.6 0 7 2.8 7 7.2 0 5.8-5.8 10.9-12.6 16.6z"/></svg>
         </div>
-        <p class="sign" id="sign">With love,<br><span class="sig-name" data-fill="from"></span></p>
+        <p class="sign" id="sign">love from ,<br><span class="sig-name" data-fill="from"></span></p>
         <div class="beat" id="beat"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27.6C9.2 21.9 3.4 16.8 3.4 11c0-4.4 3.4-7.2 7-7.2 2.5 0 4.6 1.4 5.6 3.6 1-2.2 3.1-3.6 5.6-3.6 3.6 0 7 2.8 7 7.2 0 5.8-5.8 10.9-12.6 16.6z"/></svg></div>
       </div>
     </div>
@@ -833,10 +833,10 @@ envelope.addEventListener('click', openEnvelope);
 /* ═══════════ THE LETTER — typewriter ═══════════ */
 const letterParas = [
   { t:`Dear ${CONFIG.herName}, ♥`, cls:'l-head' },
-  { t:'I wanted to give you something a little different this year. Not something wrapped in paper — something made slowly, and only for you.' },
-  { t:'Because some people simply make life feel lighter just by being in it, and you are one of them. Today happens to be the day the world received that gift.' },
-  { t:'So here is a small piece of my heart, folded carefully into this little page — a reminder of how much you matter, today and always.' },
-  { t:'And if this little surprise made you smile, then it was completely worth making. ♥' },
+  { t:'I wanted to give you something a little different this year and hand the gift to you personally. Regardless, I send you my best wishes and hope your days ahead are beautiful' },
+  { t:'For there are people who make life so much easier and more beautiful simply by their presence—and you are one of them. It was on this very day that the world received that special gift.' },
+  { t:'So, on this small piece of paper, I have poured out a part of my heart with the utmost care—' },
+  { t:'And if this little surprise brings a smile to your face, then my effort has truly been worthwhile.♥' },
   { t:`Happy Birthday, ${CONFIG.herName}.`, cls:'l-close' },
 ];
 let letterStarted = false, typingDone = false, skipType = false;
